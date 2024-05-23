@@ -1,0 +1,16 @@
+Errors{
+    auth{
+             register:its create the account but won return any respwan
+};
+//////////////////////////////////////////////////////////////////////////
+    user{
+             delet profile image is not working
+}
+
+///////////////////////////////////
+channel:{
+            create:id is not added to user model member ship
+}
+}
+
+
