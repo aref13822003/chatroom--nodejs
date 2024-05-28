@@ -19,9 +19,8 @@ const channelSchema=mongoose.Schema({
         type: String,
     },
     title:{ type: String,default:''},
-    members:{type: [mongoose.Schema.ObjectId], ref: "User"},
-    admins: { type: mongoose.Schema.ObjectId, ref: "User" },
- 
+    members:{type: [mongoose.Schema.ObjectId], ref: "User",default:[]},
+    admins: { type: [mongoose.Schema.ObjectId], ref: "User" ,default:[]},
 
 } ,{ timestamps: true })
 const channelModel=mongoose.model('Channel',channelSchema)

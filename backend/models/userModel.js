@@ -24,7 +24,7 @@ const userSchema = mongoose.Schema({
     default:""
   },
   profileImage: { type:[String]},
-  channelMembership: { type: mongoose.Schema.Types.ObjectId, ref: "Channel" },
+channelMembership: { type:[ mongoose.Schema.Types.ObjectId], ref: "Channel" ,default:[]},
 });
 const userModel = mongoose.model("User", userSchema);
 export default userModel;
