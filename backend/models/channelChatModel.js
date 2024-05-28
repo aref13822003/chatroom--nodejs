@@ -16,7 +16,7 @@ const channelSchema=mongoose.Schema({
         unique:[true,'userName is already exist'],
     },
     channelImg:{
-        type: String,
+        type: [String],
     },
     title:{ type: String,default:''},
     members:{type: [mongoose.Schema.ObjectId], ref: "User",default:[]},
